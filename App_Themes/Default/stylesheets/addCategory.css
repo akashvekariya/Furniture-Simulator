@@ -1,0 +1,38 @@
+﻿body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Adobe Clean';
+}
+
+.mainPage {
+    margin: 20px 0 0 20px;
+    position: relative;
+}
+
+.container {
+    margin-top: 40px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.label {
+   font-weight: 200;
+}
+
+.textBox {
+    width: 200px;
+    height: 20px;
+    font-family: 'Adobe Clean';
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 3px 5px;
+}
+
+.CategorySubmitBtn {
+    background-color: #e7301c;
+    border: 0px;
+    border-radius: 3px;
+    padding: 7px 15px;
+    font-family: 'Adobe Clean';
+    color: white;
+}

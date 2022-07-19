@@ -1,0 +1,429 @@
+/*general and background image settings*/
+
+body {
+    min-width: 1280px;
+    min-height: 700px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    overflow-x: hidden;
+    font-family: 'Adobe Clean';
+}
+
+.backgroundImg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/SignUpRandomImage/1.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+/*container settings*/
+
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.leftSubContainer, .rightSubContainer {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+}
+
+/*credit to behance text*/
+
+.creditBehance {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 10px 20px;
+}
+
+.creditBehance img {
+    width: 30px;
+    display: inline-block;
+    float: left; 
+}
+
+.creditBehance p {
+    margin: 0;
+    padding: 8px 0 9px 3px;
+    display: inline-block;
+    float: left;
+    font-size: 1em;
+    color: white;
+    font-family: 'SF Pro Text';
+    font-weight: 200;
+}
+
+/*main logo and text*/
+
+.mainLogo {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.subMainLogo {
+    width: 530px;
+    text-align: center;
+    position: relative;
+    margin: 0 40% 0 30%;
+}
+
+.subMainLogo img {
+    width: 100px;
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+.subMainLogo p {
+    margin: 0;
+    float: left;
+    text-align: left;
+    width: 28%;
+    padding: 10px 0 10px 10px;
+    color: white;
+    font-size: 2em;
+    font-family: 'poppins';
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+/*content box containing all controls*/
+
+.contentBox {
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    height: 90%;
+    min-height: 600px;
+    width: 70%;
+    min-width: 530px;
+    margin: 0 auto 0 5%;
+    top: 50%;
+    box-sizing: border-box;
+    transform: translateY(-50%);
+    font-family: 'Adobe Clean';
+}
+
+@media only screen and (max-width: 1300px) and (max-height: 700px) {
+    .contentBox {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        margin: auto 0 auto 0;
+    }
+}
+
+@media only screen and (max-height: 630px) {
+    .contentBox {
+        top: 0;
+        transform: none;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .leftSubContainer {
+        visibility: hidden;
+    }
+    
+    .rightSubContainer {
+        width: 100%;
+        position: absolute;
+    }
+    
+    .contentBox {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50%;
+        position: relative;
+        margin: auto;
+        height: 630px;
+    }
+}
+
+/*content inside content box*/
+
+.subContentBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 40px 46px;
+    box-sizing: border-box;
+}
+
+/*title of signin and create account*/
+
+.subContentBox h2 {
+    position: relative;
+    width: 100%;
+    display: block;
+    color: #323232;
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.subContentBox p {
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    margin-top: 8px;
+    display: inline-block;
+    position: relative;
+}
+
+.subContentBox p {
+    font-size: 1.2em;
+    color: #323232;
+}
+
+.subContentBox a {
+    font-size: 1.18em;
+    color: #1473e6;
+    text-decoration: none;
+}
+
+.controlsBox {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    height: 80%;
+}
+
+/*email textBox*/
+
+.FirstNameText {
+    display: inline-block;
+    width: 47%;
+    margin-right: calc(6% - 4px);
+    box-sizing: border-box;
+}
+
+.FirstNameText p{
+    width: 100%;
+    margin: 20px 0 0 0;
+    color: #7c7c7c;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.FirstNameText input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    font-family: 'Adobe Clean';
+    margin: 0;
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/*password text*/
+
+.LastNameText {
+    display: inline-block;
+    width: 47%;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+.LastNameText p {
+    width: 100%;
+    margin: 20px 0 0 0;
+    color: #7c7c7c;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.LastNameText input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    margin: 0;
+    font-family: 'Adobe Clean';
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+.emailText p {
+    width: 100%;
+    margin: 20px 0 0 0;
+    color: #7c7c7c;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.emailText input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    margin: 0;
+    font-family: 'Adobe Clean';
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.phoneText p {
+    width: 100%;
+    margin: 20px 0 0 0;
+    color: #7c7c7c;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.phoneText input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    margin: 0;
+    color: #505050;
+    font-family: 'Adobe Clean';
+    border-bottom: 1px solid #eaeaea;
+}
+
+.passText p {
+    width: 100%;
+    margin: 20px 0 0 0;
+    color: #7c7c7c;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.passText input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    margin: 0;
+    font-family: 'Adobe Clean';
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.confPassText p {
+    width: 100%;
+    margin: 20px 0 0 0;
+    color: #7c7c7c;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.confPassText input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    margin: 0;
+    font-family: 'Adobe Clean';
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+input[type=text]:focus, 
+input[type=password]:focus{
+    border: 0;
+    border-bottom: 1px solid #1473e6;
+    outline: none;
+    transition: 0.3s;
+}
+
+/*submit button*/
+
+.controlsBox input[type=submit] {
+    background-color: #1473e6;
+    border-radius: 100px;
+    font-family: 'Adobe Clean';
+    border: 0;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 7px 22px;
+    float: right;
+    margin-top: 30px;
+}
+
+.controlsBox input[type=submit]:hover, 
+.controlsBox input[type=submit]:focus,
+.controlsBox input[type=submit]:active{
+    background-color: #0360cf;
+    outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .contentBox {
+        min-height: 700px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    
+    body, html {
+        min-width: 700px;
+    }
+    
+    .subContentBox {
+        padding: 70px 50px 70px auto ;
+    }
+}
+
+.termsCondition {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+}
+
+/*validation style*/
+
+.validation {
+    position: relative;
+    width: 100%;
+    top: 5px;
+}
+
+.halfValidation {
+    position: relative;
+    width: 48%;
+    display: inline-block;
+    top: 5px;
+}
+
+.mainValidation {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+

@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="shortcut icon" href="App_Themes/Default/images/LogoFurnitureSimulator.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="App_Themes/Default/stylesheets/masterPage.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" autocomplete="off">
+        <asp:ScriptManager ID="scriptManager" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel ID="updatePanel" runat="server">
+            <ContentTemplate>
+                <div class="mainPane">
+                    <div class="leftPane">
+                        <img class="logoImage" src="App_Themes/Default/images/LogoFurnitureSimulator.png">
+                        <ul class="listOfPage">
+                            <a href="publishParts.aspx">
+                                <li class="linkToPage">Upload Components</li>
+                            </a>
+                            <a href="materialColor.aspx">
+                                <li class="linkToPage">Material & Color</li>
+                            </a>
+                            <a href="selectCatSimulate.aspx">
+                                <li class="linkToPage">Simulation</li>
+                            </a>
+                            <a href="updateAccount.aspx">
+                                <li class="linkToPage">Update Account</li>
+                            </a>
+                            <a href="deleteComponents.aspx">
+                                <li class="linkToPage">Delete Components</li>
+                            </a>
+                            <a href="CustomerDetails.aspx">
+                                <li class="linkToPage">Customer Details</li>
+                            </a>
+                            <a href="Feedback.aspx">
+                                <li class="linkToPage">Feedback</li>
+                            </a>
+                        </ul>
+                        <asp:Button ID="signout" runat="server" Text="Sign out" CausesValidation="false" UseSubmitBehavior="false" CssClass="signOutBtn" OnClick="signout_Click" />
+                    </div>
+                    <div class="rightPane">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </form>
+</body>
+</html>

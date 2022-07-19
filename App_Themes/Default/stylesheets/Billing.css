@@ -1,0 +1,133 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro Text';
+    width: 100vw;
+    height: 100vh;
+}
+
+.titleBilling {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 50px !important;
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+}
+
+.billBox {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    background-color: #f0efef;
+    border-radius: 20px;
+}
+
+.billFieldContainer {
+    margin-bottom: 20px;
+}
+
+.billFieldContainerName {
+    margin-bottom: 20px;
+    width: calc(48% - 4px);
+    display: inline-block;
+}
+
+.billFieldContainerPhone {
+    margin-bottom: 20px;
+    width: calc(48% - 4px);
+    display: inline-block;
+}
+
+.billFieldContainerEmail {
+    margin-bottom: 20px;
+    width: calc(48% - 4px);
+    display: inline-block;
+    right: 40px;
+    position: absolute;
+}
+
+.billFieldContainerPurchaseDate {
+    margin-bottom: 20px;
+    width: calc(45% - 4px);
+    display: inline-block;
+    position: absolute;
+}
+
+.billFieldContainerShippingDate {
+    margin-bottom: 20px;
+    width: calc(48% - 4px);
+    display: inline-block;
+    right: 40px;
+    position: absolute;
+}
+
+.billFieldContainerAmount {
+    margin-bottom: 20px;
+    width: calc(48% - 4px);
+    display: inline-block;
+    right: 40px;
+    position: absolute;
+}
+
+.label{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.number {
+    width: calc(100% - 30px);
+    background-color: #f0efef;
+    border: 0;
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 10px;     
+    border-bottom: 1.5px solid #808080 !important;
+}
+
+.customerNameTextBill, .emailTextBill, .customerAddressTextBill, .phoneTextBill, input[type=date] {
+    background-color: #f0efef;
+    border: 0;
+    font-size: 20px;
+    font-weight: 100;
+    width: 100%;
+    border-bottom: 1.5px solid #808080 !important;
+}
+
+    .customerAddressTextBill:focus, .customerNameTextBill:focus, .phoneTextBill:focus, .emailTextBill:focus, input[type=date]:focus, .number:focus {
+        border-bottom: 1.5px solid #0094ff !important;
+        outline: none;
+    }
+
+.purchase {
+    padding: 5px 40px;
+    margin: auto;
+    border: 0;
+    border-radius: 4px;
+    background-color: #1473e6;
+    color: white;   
+}
+
+.purchase:hover {
+    background-color: #1366c9;
+}
+
+.purchase:focus {
+    outline: none;
+}
+
+.billFieldContainerBtn {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    right: 10px;
+    bottom: 150px;
+    position: absolute;
+
+}

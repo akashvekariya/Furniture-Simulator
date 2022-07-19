@@ -1,0 +1,232 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'SF Pro Text';
+}
+
+.updatePane {
+    margin-left: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.wizard {
+    border: 0 !important;
+}
+
+.mainTitle {
+    font-weight: 900;
+}
+
+.updateControlsPane {
+    visibility: hidden;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 50%;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.wiz1Pass {
+    width: 50%;
+    position: relative;
+    margin-left: 10px;
+}
+
+.wiz1Pass span {
+    width: 100%;
+    margin: 0;
+    color: #7c7c7c;
+    margin-top: 20px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.wiz1Pass input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    font-family: 'SF Pro Text';
+    margin: 0;
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.wiz1Button {
+    color: white;
+    position: relative;
+    background-color: #1473e6;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.wiz1Button:hover {
+    background-color: #1569cd;
+}
+
+
+.wiz11Warning {
+    color: red;
+}
+
+.inlineBox1, .inlineBox2 {
+    width: 48%;
+    display: inline-block;
+}
+
+.inlineBox2 {
+    right: 0;
+    position: absolute;
+}
+
+.firstNameUpdate h6 {
+    width: 100%;
+    margin: 0;
+    color: #7c7c7c;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.firstNameUpdate input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    font-family: 'SF Pro Text';
+    margin: 0;
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.lastNameUpdate h6 {
+    width: 100%;
+    margin: 0;
+    color: #7c7c7c;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.lastNameUpdate input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    font-family: 'SF Pro Text';
+    margin: 0;
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.emailUpdate h6 {
+    width: 100%;
+    margin: 0;
+    color: #7c7c7c;
+    margin-top: 20px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.emailUpdate input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    font-family: 'SF Pro Text';
+    margin: 0;
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.phoneUpdate h6 {
+    width: 100%;
+    margin: 0;
+    color: #7c7c7c;
+    margin-top: 20px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.phoneUpdate input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    font-size: 1.3em;
+    font-family: 'SF Pro Text';
+    margin: 0;
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.passwordUpdate h6 {
+    width: 100%;
+    margin: 0;
+    color: #7c7c7c;
+    margin-top: 20px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.passwordUpdate input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    border: 0;
+    display: inline-block;
+    font-size: 1.3em;
+    font-family: 'SF Pro Text';
+    margin: 0;
+    color: #505050;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.updateDate{
+    width: 100%;
+    margin: 0;
+    color: #7c7c7c;
+    margin-top: 20px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    border: 0;
+    border-bottom: 1px solid #1473e6;
+    outline: none;
+    transition: 0.3s;
+}
+
+.finalUpdateButton {
+    margin-top: 20px;
+    right: 0;
+    display: block;
+    color: white;
+    background-color: #1473e6;
+    border: 0px;
+    padding: 5px 20px;
+    border-radius: 100px;
+}
+
+.finalUpdateButton:focus, .finalUpdateButton:hover  {
+    outline: none;
+    background-color: #1569cd;
+}

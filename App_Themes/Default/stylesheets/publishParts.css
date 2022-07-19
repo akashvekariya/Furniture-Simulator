@@ -1,0 +1,165 @@
+﻿/*general setup*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro Text';
+}
+
+.mainTitle {
+    font-weight: 900;
+    position: relative;
+}
+
+.subTitle {
+    font-size: 1.5em;
+    color: #6a6a6a;
+    position: relative;
+}
+
+.mainPage {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 97%;
+    height: 95%;
+    position: relative;
+}
+
+.wizard {
+    top: 0;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+/*wizard 1*/
+
+#imgpreview {
+    border: 0px;
+    visibility: hidden;
+    position: relative;
+    margin: 15px;
+    max-height: 300px;
+}
+
+pre {
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Slate For OnePlus';
+    padding: 10px 20px;
+    background-color: #ffdf21;
+    border-radius: 4px;
+}
+
+pre img {
+    width: 20px;
+    height: 20px;
+}
+
+.dropdownStyle {
+    width: 120px;
+    margin-top: 30px;
+    height: 30px;
+    padding-left:5px;
+    overflow: hidden;
+    font-family: 'SF Pro Text';
+}
+
+.fileUpload {
+    font-family: 'SF Pro Text';
+}
+
+input[type=file], input[type=file] + input {
+    display: inline-block;
+    border: 1px dashed black;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px;
+    color: gray;
+}
+
+input[type=file] + input {
+    padding: 5px 12px;
+    margin-left: 2px;
+    font-family: 'SF Pro Text';
+    border: 0px;
+    border-radius: 3px;
+    background-color: #1473e6;
+    color: #ffffff;
+    -webkit-text-fill-color: white;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: none;
+    align-items: start;
+    background-color: #1473e6;
+    font-family: 'SF Pro Text';
+    color: white;
+    -webkit-text-fill-color: white;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 4px 10px;
+    position: relative;
+}
+
+::-ms-browse {
+    background-color: #1473e6;
+    border: 1px solid gray;
+    font-size: 14px;
+    padding: 8px;
+}
+input[type=file]::-ms-value { border: none;  }
+
+/*wizard - 2*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.partPriceStyle {
+    width: 120px;
+    height: 25px;
+    font-family: 'SF Pro Text';
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.submitUploadBtn {
+    text-align: center;
+    position: relative;
+    font-family: 'SF Pro Text';
+    border: 0px;
+    margin-top: 20px;
+    height: 30px;
+    font-size: 14px;
+    color: white;
+    background-color: #1473e6;
+    border-radius: 2px;
+    padding: 5px 20px;
+    overflow: hidden;
+}
+
+.SimulateBtn {
+    text-align: center;
+    font-family: 'SF Pro Text';
+    border: 0px;
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    color: white;
+    background-color: #1473e6;
+    border-radius: 2px;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+.SimulateMasterBox {
+    margin: 20px 0 0 20px;
+}

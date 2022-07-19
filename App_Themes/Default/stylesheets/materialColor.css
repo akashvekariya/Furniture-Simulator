@@ -1,0 +1,113 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro Text';
+    font-size: 14px;
+}
+
+.masterPanel {
+    width: 97%;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    top: 20px;
+}
+
+.mainTitle {
+    font-weight: 900;
+}
+
+.subMasterPanel {
+    position: relative;
+    margin: 20px 20px;
+    height: 80%;
+}
+
+.textBox {
+    border: 1px solid gray;
+    width: 250px;
+    height: 28px;
+    border-radius: 1px;
+    font-family: 'SF Pro Text' !important;
+}
+
+.textBox:focus {
+    border: 1px solid gray !important;
+    width: 250px !important;
+    height: 28px !important;
+    border-radius: 1px !important;
+}
+
+
+.wizard {
+    border: 1px solid red;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto;
+}
+
+.fileUpload {
+    font-family: 'SF Pro Text';
+}
+
+input[type=file], input[type=file] + input {
+    display: inline-block;
+    border: 1px dashed black;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px;
+    color: gray;
+}
+
+input[type=file] + input {
+    padding: 5px 12px;
+    margin-left: 2px;
+    font-family: 'SF Pro Text';
+    border: 0px;
+    border-radius: 3px;
+    background-color: #1473e6;
+    color: #ffffff;
+    -webkit-text-fill-color: white;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: none;
+    align-items: start;
+    background-color: #1473e6;
+    font-family: 'SF Pro Text';
+    color: white;
+    -webkit-text-fill-color: white;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 4px 10px;
+    position: relative;
+}
+
+::-ms-browse {
+    background-color: #1473e6;
+    border: 1px solid gray;
+    font-size: 14px;
+    padding: 8px;
+}
+input[type=file]::-ms-value { border: none;  }
+
+#imgpreview {
+    border: 0px !important;
+    visibility: hidden;
+    max-width: 200px !important;
+    position: relative !important;
+    margin: 20px 10px 0 10px;
+}
+
+.uploadMatCol {
+    background-color: #1473e6;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    position: relative;
+    color: white;
+}
+
